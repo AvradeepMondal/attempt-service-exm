@@ -13,5 +13,5 @@ public class QuestionSnapshot {
 
     private String questionId;
 
-    private Integer correctAnswer;
+    private int correctAnswer;
 }
