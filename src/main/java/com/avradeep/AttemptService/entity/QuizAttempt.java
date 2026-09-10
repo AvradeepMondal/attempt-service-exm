@@ -30,7 +30,7 @@ public class QuizAttempt {
 
     private AttemptStatus status;
 
-    private Map<String, Integer> answers;
+    private Map<String, Integer> answers; //answers selected by the client
 
-    private List<QuestionSnapshot> questionSnapshot;
+    private List<QuestionSnapshot> questionSnapshot; //correct answer of each questions
 }
