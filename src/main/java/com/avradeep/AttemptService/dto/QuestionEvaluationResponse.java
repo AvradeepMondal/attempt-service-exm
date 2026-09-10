@@ -1,0 +1,25 @@
+package com.avradeep.AttemptService.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class QuestionEvaluationResponse {
+
+    private String id;
+
+    private String quizId;
+
+    private String questionText;
+
+    private List<String> options;
+
+    private int correctAnswer;
+}
