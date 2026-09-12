@@ -175,7 +175,7 @@ public class AttemptServiceImpl implements AttemptService{
         );
 
         /**
-          Build safe response for client
+          Build safe response for a client
          */
         List<AttemptQuestionResponse> responseQuestions =
                 questions.stream()
@@ -236,7 +236,7 @@ public class AttemptServiceImpl implements AttemptService{
                     "You are not allowed to submit this attempt");
         }
 
-        // 4. Verify attempt is still active
+        // 4. Verify an attempt is still active
         if (attempt.getStatus() != AttemptStatus.IN_PROGRESS) {
             throw new IllegalStateException(
                     "This attempt is already completed");
